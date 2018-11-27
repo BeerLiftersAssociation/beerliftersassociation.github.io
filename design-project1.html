@@ -235,9 +235,22 @@ into the {body} of the default.hbs template -->
 <ul>
   <li><em>Summary</em>
     <ul>
-      <li>Serverless, REST backend
-Pro:
-Con:</li>
+      <li>Serverless, REST backend.</li>
+      <li>JS framework front-end, hosted from cloudfront, backed by S3.</li>
+    </ul>
+  </li>
+  <li><em>Pro</em>
+    <ul>
+      <li>JS front-end takes load and cost out of system</li>
+      <li>Cognito for user management, don’t have to reinvent the wheel</li>
+      <li>More native approach by building on AWS services</li>
+      <li>More cost effective/capacity effect for small project than option #1</li>
+    </ul>
+  </li>
+  <li><em>Con</em>
+    <ul>
+      <li>Writing Cloudformation templates for API Gateway is not fluid, there is quite a bit of bloaty boilerplate.</li>
+      <li>Front-end skillset needed.</li>
     </ul>
   </li>
 </ul>
@@ -246,9 +259,21 @@ Con:</li>
 <ul>
   <li><em>Summary</em>
     <ul>
-      <li>Serverless, GRAPHQL backend
-Pro:
-Con:</li>
+      <li>Serverless, GRAPHQL backend</li>
+      <li>JS framework front-end, hosted from cloudfront, backed by S3.</li>
+    </ul>
+  </li>
+  <li><em>Pro</em>
+    <ul>
+      <li>JS front-end takes load and cost out of system</li>
+      <li>Cognito for user management, don’t have to reinvent the wheel</li>
+      <li>More native approach by building on AWS services.  Use of AWS Amplify library is a big win for abstracting services and easy wiring.</li>
+      <li>Most cost effective/capacity effect for small project than option #1</li>
+    </ul>
+  </li>
+  <li><em>Con</em>
+    <ul>
+      <li>Front-end skillset needed</li>
     </ul>
   </li>
 </ul>
